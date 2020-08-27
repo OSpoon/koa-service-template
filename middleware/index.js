@@ -24,7 +24,7 @@ module.exports = (app) => {
     serverIp: ip.address()
   }))
 
-  app.use(staticFiles(path.resolve(__dirname, '../public')))
+  app.use(staticFiles(path.resolve(__dirname, '../static')))
 
   app.use(nunjucks({
     ext: 'html',
